@@ -1,6 +1,6 @@
 #!/bin/bash
-read -p"Please enter server ip: " addr
-echo "starting register agent from: $addr" 
+#read -p"Please enter server ip: " addr
+#echo "starting register agent from: $addr" 
 if [ -e "../NDND" ];then
     cd ..
 elif [ -e "../../NDND" ];then
@@ -16,5 +16,6 @@ else
     exit 2
 fi
 cd NDND
-./nd-client -ip $addr
+./nd-client 
+#-ip $addr
 
